@@ -952,9 +952,10 @@ a {
         display: none;
       }
 
-      #booking_2{
+      #booking_2, #booking_3{
         display: none;
       }
+
 
       svg{
         color: #ffffff;
