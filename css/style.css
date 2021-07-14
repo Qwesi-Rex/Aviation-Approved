@@ -79,10 +79,21 @@ a {
   
 }
 
+.hero_2 {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+
 
 #header{
   background-color: rgba(0, 0, 0, 0.828);
   height: 5.3rem;
+  border-bottom: 0.8px solid #c4b18e;
 }
 
 
@@ -179,10 +190,12 @@ a {
 
       .site-navbar .site-navigation .site-menu > li > a:hover {
       /* background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
-      color: #ffffff;
+      color: #ffffff; */
+      border-bottom: 1px solid #cacaca;
       border-radius: 25px;
-      font-weight: 500; */
-
+      font-weight: 400;
+      
+  
       }
 
       .site-navbar .site-navigation .site-menu > li.active > a {
@@ -518,8 +531,8 @@ a {
       }
 
 
-      /* ----------- BOOKING FORMS ---------------- */
-
+      /* ----------- BOOKING FORMS ( VERTICAL ) ---------------- */
+/* 
       .section {
         position: relative;
         height: 100vh;
@@ -541,6 +554,7 @@ a {
         background-size: cover;
         background-position: center;
         color: #ffffffa1;
+      
       }
       
       .booking-form {
@@ -561,13 +575,7 @@ a {
       }
 
 
-      /* #headline{
-        background: #bbbbbb;
-        border: 1px solid #ffc451;
-        border-radius: 25px;
-        padding: 5px;
-      } */
-      
+     
       .booking-form .form-control {
         background-color: rgba(0, 0, 0, 0.342);
         height: 65px;
@@ -589,19 +597,19 @@ a {
       }
       
       .booking-form .form-control:-ms-input-placeholder {
-        color: #e4e4e4;
+        color:  #999999;
       }
       
       .booking-form .form-control::placeholder {
-        color: #999999;
+        color: #8b8b8b;
       }
       
       .booking-form .form-control:focus {
-        background: #f9fafb;
+        background: #272727;
       }
       
       .booking-form input[type="date"].form-control:invalid {
-        color: #999999;
+        color: #cacaca;
       }
       
       .booking-form select.form-control {
@@ -734,10 +742,188 @@ a {
       .booking-cta p {
         font-size: 22px;
         color: #ffffff;
-      }
+      } */
 
 
       /* ----------- END BOOKING FORMS ---------------- */
+
+
+       /* ----------- BOOKING FORMS ( HORIZONTAL ) ---------------- */
+
+
+       .section {
+        position: relative;
+        height: 100vh;
+      
+      }
+      
+      .section .section-center {
+        position: absolute;
+        top: 88%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      
+      #booking {
+        font-family: 'Montserrat', arial, sans-serif;
+        /* background-image: url('../img/background.jpg');
+        background-size: cover;
+        background-position: center; */
+      }
+      
+      #booking::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          background: rgba(255, 255, 255, 0.15);
+      }
+      
+      .booking-form {
+        background: rgba(5, 5, 5, 0.616);
+        border-radius: 5px;
+        padding: 20px 0px;
+      }
+      
+      .booking-form>form .row.no-margin {
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+      
+      .booking-form>form .row.no-margin>[class*="col-"] {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      
+      .booking-form .form-group {
+        position: relative;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        /* width: 250px; */
+      }
+      
+      
+      
+      .booking-form .form-control {
+        background-color: #000000ca;
+        border: 1px solid rgb(65, 65, 65);
+        border-radius: 0px;
+        height: 40px;
+        /* width: 80%; */
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 400;
+        padding-left: 10px;
+      }
+      
+      .booking-form .form-control::-webkit-input-placeholder {
+        color: #818390;
+      }
+      
+      .booking-form .form-control:-ms-input-placeholder {
+        color: #818390;
+      }
+      
+      .booking-form .form-control::placeholder {
+        color: #818390;
+      }
+      
+      .booking-form input[type="date"].form-control:invalid {
+        color: #818390;
+      }
+      
+      .booking-form select.form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      
+      .booking-form select.form-control+.select-arrow {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+        width: 20px;
+        line-height: 32px;
+        height: 32px;
+        text-align: center;
+        pointer-events: none;
+        color: #818390;
+        font-size: 14px;
+      }
+      
+      .booking-form select.form-control+.select-arrow:after {
+        content: '\279C';
+        display: block;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      
+      
+      
+      .booking-form .form-button label {
+        position: relative;
+        padding-top: 4px;
+        font-weight: 400;
+        color: #181818;
+        margin-bottom: 0px;
+        
+        }
+      
+        .booking-form .form-button input {
+        text-transform: uppercase;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: #0a0a0ac9;
+        border: none;
+        color: #ffffff;
+      
+        }
+      
+        .booking-form .form-button input:focus {
+        background: #000000;
+        
+      }
+      
+      .booking-form .form-btn {
+        padding: 0px;
+      }
+      
+      .booking-form .submit-btn {
+        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+        border: none;
+        display: block;
+        border-radius: 0px;
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        /* padding: 0px 15px; */
+      }
+
+      .booking-form .submit-btn:hover {
+        background: rgba(203,146,48,1) 0% !important;
+        
+        /* padding: 0px 15px; */
+      }
+
+
+      /* ----------- BOOKING FORMS ( HORIZONTAL ) END ---------------- */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -760,6 +946,68 @@ a {
         font-weight: 500;
         text-transform: uppercase;
     }
+
+
+
+    /*--------------------------------------------------------------
+# Our Team 
+--------------------------------------------------------------*/
+
+
+.team-section .team-item {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 2px;
+}
+
+
+.team-section .team-item .team-img {
+  width: 180px;
+  border-radius: 50%;
+  border: 6px solid rgb(153, 105, 23);
+  margin: 0 auto;
+}
+
+.team-section .team-item h3 {
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+  color: rgb(255, 255, 255);
+  font-family: cinzel, sans-serif;
+}
+
+
+.team-section .team-item h4 {
+  font-size: 14px;
+  color: rgb(247, 198, 115);
+  margin: 0 0 15px 0;
+  font-weight: 200;
+}
+
+.team-section .team-item p {
+  font-size: 14px;
+  color: #fdfdfd;
+  margin: 0 0 15px 0;
+  font-weight: 200;
+  text-align: center;
+}
+
+
+.social-links a {
+  font-size: 25px;
+  color: #62787d;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: rgba(0, 123, 88, 0.619);
+}
+
+
+
+
 
 
       /* --------Service CSS ----------- */
@@ -1134,9 +1382,9 @@ a {
    @media (max-width: 768px){
 
 
-          /* ----------- BOOKING FORMS ---------------- */
+          /* ----------- BOOKING FORMS VERTICAL  ---------------- */
 
-          .section {
+          /* .section {
             position: relative;
             height: 100vh;
             margin-top: 80px;
@@ -1176,14 +1424,7 @@ a {
             position: relative;
             margin-bottom: 20px;
           }
-    
-    
-          /* #headline{
-            background: #bbbbbb;
-            border: 1px solid #ffc451;
-            border-radius: 25px;
-            padding: 5px;
-          } */
+
           
           .booking-form .form-control {
             background-color: rgba(0, 0, 0, 0.342);
@@ -1337,7 +1578,7 @@ a {
             text-transform: uppercase
           }
           
-      
+       */
     
     
           /* ----------- END BOOKING FORMS ---------------- */
@@ -1407,11 +1648,23 @@ a {
         color: #ffffff;
       }
 
+       /* ----------- BOOKING FORMS INLINE ---------------- */
+
+      .section .section-center {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+       /* ----------- BOOKING FORMS INLINE END ---------------- */
 
 
         /* ----------- BOOKING FORMS ---------------- */
 
-        .section {
+        /* .section {
           position: relative;
           height: 150vh;
           margin-top: 80px;
@@ -1433,6 +1686,7 @@ a {
           background-position: center;
           color: #ffffffa1;
           font-size: 13px;
+
         }
         
         .booking-form {
@@ -1453,13 +1707,6 @@ a {
         }
   
   
-        /* #headline{
-          background: #bbbbbb;
-          border: 1px solid #ffc451;
-          border-radius: 25px;
-          padding: 5px;
-        } */
-        
         .booking-form .form-control {
           background-color: rgba(0, 0, 0, 0.342);
           height: 55px;
@@ -1588,7 +1835,7 @@ a {
         
         .booking-form .submit-btn {
           color: #fff;
-          background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+          background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
           font-weight: 400;
           height: 35px;
           font-size: 15px;
@@ -1612,8 +1859,8 @@ a {
         
     
   
-  
-        /* ----------- END BOOKING FORMS ---------------- */
+   */
+        /* ----------- END BOOKING FORMS VERTICAL  ---------------- */
 
 
 
@@ -1765,6 +2012,48 @@ a {
     /*  ___________________________  MEDIA QUERIES   ________________________________  */
         
     @media (max-width: 375px){
+
+
+       /* ----------- BOOKING FORMS INLINE ---------------- */
+
+       .section .section-center {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+/* 
+      .form-button{
+        display: flex;
+        flex-wrap: unset;
+      } */
+
+      .booking-form .form-button label {
+        position: relative;
+        padding-top: 4px;
+        font-weight: 400;
+        color: #181818;
+        margin-bottom: 0px;
+        
+        }
+      
+        .booking-form .form-button input {
+        text-transform: uppercase;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: #0a0a0ac9;
+        border: none;
+        color: #ffffff;
+        font-size: 13px;
+      
+        }
+
+       /* ----------- BOOKING FORMS INLINE END ---------------- */
+
+
 
       .service .service-item {
         position: relative;

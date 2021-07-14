@@ -103,3 +103,14 @@ $(function() {
 	siteMenuClone();
 
 });
+
+
+	// Hidden Forms 
+
+	// $(document).ready(function() {
+	// 	$("#toggle").click(function() {
+	// 		$("#booking").toggle(1000);
+	// 	});
+	// });
+	
+		

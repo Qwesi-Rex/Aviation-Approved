@@ -39,7 +39,7 @@
   
     
 
-    <div class="hero" style="background-image: url('images/hero_1.jpg'); ">
+    <div class="hero" style="background-image: url('images/about_1.jpg'); ">
     
       <!-- <video autoplay loop muted playsinline src="images/banner.mp4"></video> -->
       <header id="header" class="site-navbar site-navbar-target pt-0" role="banner">
@@ -51,7 +51,7 @@
               <nav class="site-navigation text-right ml-auto " role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="project.html" class="nav-link">Book a Trip</a></li>
+                  <li><a href="about-us.html" class="nav-link">About Us</a></li>
                   <li><a href="services.html" class="nav-link">Services</a></li>
                 </ul>
               </nav>
@@ -86,9 +86,9 @@
 
       <!-- BOOKING FORMS -->
 
-      <div id="booking" class="section">
+      <!-- <div id="booking" class="section">
         <div class="section-center">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row d-flex justify-content-center">
             
               <div class="col-md-7 col-md-offset-1 ">
@@ -96,13 +96,13 @@
                   <form>
                     <div class="form-group" id="headline">
                       <div class="form-checkbox">
+                      <label for="one-way">
+                          <input type="radio" id="one-way" name="flight-type">
+                          <span></span>One way
+                        </label>
                         <label for="roundtrip">
                           <input type="radio" id="roundtrip" name="flight-type">
                           <span></span>Roundtrip
-                        </label>
-                        <label for="one-way">
-                          <input type="radio" id="one-way" name="flight-type">
-                          <span></span>One way
                         </label>
                         <label for="multi-city">
                           <input type="radio" id="multi-city" name="flight-type">
@@ -111,19 +111,35 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <span class="form-label">Flying from</span>
                           <input class="form-control" type="text" placeholder="City or airport">
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <span class="form-label">Flyning to</span>
                           <input class="form-control" type="text" placeholder="City or airport">
                         </div>
                       </div>
-                    </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <span class="form-label">Flyning to</span>
+                          <input class="form-control" type="text" placeholder="City or airport">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <span class="form-label">Flyning to</span>
+                          <input class="form-control" type="text" placeholder="City or airport">
+                        </div>
+                      </div>
+
+                    </div>   
+                  
+                    
+
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
@@ -182,7 +198,100 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+
+       <!-- BOOKING FORMS ( HORINZONTAL ) -->
+
+     	<div id="booking" class="section">
+        <div class="section-center">
+          <div class="container">
+            <div class="row">
+              <div class="booking-form">
+                <form>
+                  <div class="row no-margin container">
+                      <div class="form-button container">
+                          <label for="one-way">
+                            <input class="listing"  type="button" value="one-way" name="flight-type" data-fliter="one-way">
+                            </label>
+                            <label for="roundtrip">
+                            <input class="listing" type="button" value="round trip" name="flight-type" data-fliter="round-trip">
+                            </label>
+                            <label for="multi-leg">
+                            <input class="listing" type="button" value="multi-leg" name="flight-type" data-fliter="multi-leg">
+                            </label>
+                          </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        
+                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                          
+                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                            
+                            <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                              
+                              <input class="form-control multi-leg" type="datetime" placeholder="02-Jun-2021">
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                              <div class="form-btn">
+                                  <button class="submit-btn">Show Flights</button>
+                                </div>
+                            </div>
+    
+                    <!-- <div class="col-md-6">
+                      <div class="row no-margin">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Check In</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <span class="form-label">Check out</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-group">
+                            <span class="form-label">Guests</span>
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- <div class="col-md-3">
+                      <div class="form-btn">
+                        <button class="submit-btn">Check availability</button>
+                      </div>
+                    </div> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- BOOKING FORM ( HORIZONTAL ) -->
 
 
 
@@ -196,6 +305,8 @@
         <h1 class="cinzel">LUXURY TRAVEL WORKS BEST WITH GREAT ATTENTION TO DETAIL</h1>
         <hr>
         <p class="lead">Easy access and proximity of business travel  grows an economy. In Africa thats one of our biggest deficit.</p>
+
+        <!-- <button id="toggle" class="btn btn-warning btn-lg">Toogle</button> -->
       </div>
 
 
