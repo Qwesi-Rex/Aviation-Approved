@@ -107,10 +107,32 @@ $(function() {
 
 	// Hidden Forms 
 
-	// $(document).ready(function() {
-	// 	$("#toggle").click(function() {
-	// 		$("#booking").toggle(1000);
-	// 	});
-	// });
+	$(document).ready(function() {
+		$("#toggle").click(function() {
+			$("#round-trip").show(1000);
+		});
+	});
+
+	$(document).ready(function() {
+		$("#multi-leg").click(function() {
+			$("#booking_2").toggle(1000);
+		});
+	});
+
+	$(document).ready(function() {
+		$("#closer").click(function() {
+			$("#round-trip").hide(1000);
+		});
+	});
+
+	$(document).ready(function() {
+		$("#closer_x").click(function() {
+			$("#booking_2").hide(1000);
+		});
+	});
+
+	
+
+	
 	
 		

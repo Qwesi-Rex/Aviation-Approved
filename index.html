@@ -73,7 +73,7 @@
               <nav class="site-navigation text-left mr-auto" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                   <li><a href="about.html" class="nav-link xr">Contact Us</a></li>
-                  <li><a href="blog.html" class="nav-link xr">Blacklist Members</a></li>
+                  <li><a href="blog.html" class="nav-link xr">Empty Legs</a></li>
                   <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
                 </ul>
               </nav>
@@ -210,17 +210,17 @@
               <div class="booking-form">
                 <form>
                   <div class="row no-margin container">
-                      <div class="form-button container">
-                          <label for="one-way">
-                            <input class="listing"  type="button" value="one-way" name="flight-type" data-fliter="one-way">
-                            </label>
-                            <label for="roundtrip">
-                            <input class="listing" type="button" value="round trip" name="flight-type" data-fliter="round-trip">
-                            </label>
-                            <label for="multi-leg">
-                            <input class="listing" type="button" value="multi-leg" name="flight-type" data-fliter="multi-leg">
-                            </label>
-                          </div>
+                    <div class="form-button container">
+                      <label for="one-way">
+                        <input id="closer" class="listing"  type="button" value="one-way" name="flight-type" data-fliter="one-way">
+                        </label>
+                        <label for="roundtrip">
+                        <input id="toggle" class="listing" type="button" value="round trip" name="flight-type" data-fliter="round-trip">
+                        </label>
+                        <label for="multi-leg">
+                        <input id="multi-leg" class="listing" type="button" value="multi-leg" name="flight-type" data-fliter="multi-leg">
+                        </label>
+                      </div>
                     <div class="col-md-3">
                       <div class="form-group">
                         
@@ -239,17 +239,18 @@
                             <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
                           </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                              
-                              <input class="form-control multi-leg" type="datetime" placeholder="02-Jun-2021">
-                            </div>
+                        <div id="round-trip" class="col-md-2">
+                          <div class=" form-group">
+                            
+                            <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
                           </div>
-                          <div class="col-md-2">
+                        </div>
+                        
+                          <!-- <div class="col-md-2">
                               <div class="form-btn">
                                   <button class="submit-btn">Show Flights</button>
                                 </div>
-                            </div>
+                            </div> -->
     
                     <!-- <div class="col-md-6">
                       <div class="row no-margin">
@@ -283,8 +284,90 @@
                         <button class="submit-btn">Check availability</button>
                       </div>
                     </div> -->
+
+                   
                   </div>
                 </form>
+
+
+              
+        <div id="booking_2">
+                <!-- ADDITIONAL FLIGHT LEG( FORM 2 ) -->
+
+                <form>
+                  <div class="row no-margin container">
+                     
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        
+                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                          
+                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                            
+                            <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                              
+                              <input class="form-control multi-leg" type="datetime" placeholder="02-Jun-2021">
+                            </div>
+                          </div>
+                        
+                  </div>
+                </form>
+
+                <!-- ADDITIONAL FLIGHT LEG( FORM 3 ) -->
+
+                <form>
+                  <div class="row no-margin container">
+                     
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        
+                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                          
+                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                            
+                            <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                              
+                              <input class="form-control multi-leg" type="datetime" placeholder="02-Jun-2021">
+                            </div>
+                          </div>
+                        
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="closer_x" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                          </svg>
+                  </div>
+                </form>
+        </div>
+
+
+
+                <div class="container py-3">
+                   <button id="toggle" class="submit-btn">Show Flights</button>
+                </div>
+
               </div>
             </div>
           </div>

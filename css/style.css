@@ -809,14 +809,14 @@ a {
       
       
       .booking-form .form-control {
-        background-color: #000000ca;
+        background-color: #ffffffca;
         border: 1px solid rgb(65, 65, 65);
         border-radius: 0px;
         height: 40px;
         /* width: 80%; */
         font-size: 13px;
-        color: #ffffff;
-        font-weight: 400;
+        color: #1d1d1d;
+        font-weight: 600;
         padding-left: 10px;
       }
       
@@ -829,11 +829,11 @@ a {
       }
       
       .booking-form .form-control::placeholder {
-        color: #818390;
+        color: #1f1f1f;
       }
       
       .booking-form input[type="date"].form-control:invalid {
-        color: #818390;
+        color: #2a2a2a;
       }
       
       .booking-form select.form-control {
@@ -885,7 +885,9 @@ a {
         }
       
         .booking-form .form-button input:focus {
-        background: #000000;
+        background: #ffffff;
+        color: #1b1b1b;
+        font-weight: 600;
         
       }
       
@@ -913,6 +915,58 @@ a {
         /* padding: 0px 15px; */
       }
 
+
+      .booking-form .submit-1-btn {
+        background: #ffffff;
+        border: none;
+        border-radius: 0px;
+        width: 15%;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(44, 44, 44);
+        text-transform: uppercase;
+       
+      }
+
+      .booking-form .submit-1-btn:focus {
+        background: #9c9c9c !important;
+        border: none !important;
+        border-radius: 0px !important;
+        width: 15%;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(44, 44, 44);
+        text-transform: uppercase;
+       
+      }
+
+      
+    #round-trip{
+      display: none;
+    }
+      
+
+      #booking_1{
+        display: none;
+      }
+
+      #booking_2{
+        display: none;
+      }
+
+      svg{
+        color: #ffffff;
+        margin: 2px 2px;
+        padding: 5px;
+
+      }
+
+      svg:hover{
+        color: #ffffffca;
+        padding: 3px;
+      }
 
       /* ----------- BOOKING FORMS ( HORIZONTAL ) END ---------------- */
 
