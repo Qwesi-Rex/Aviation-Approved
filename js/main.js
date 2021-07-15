@@ -159,7 +159,7 @@ $(function() {
    /**
    * Disable AOS animation of mobile view
    */
-//   AOS.init({disable: 'mobile'});
+  AOS.init({disable: 'mobile'});
 	
 	
 		
