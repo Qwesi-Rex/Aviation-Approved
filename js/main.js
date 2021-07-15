@@ -144,7 +144,22 @@ $(function() {
 	});
 
 	
+	  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
 
+   /**
+   * Disable AOS animation of mobile view
+   */
+//   AOS.init({disable: 'mobile'});
 	
 	
 		
