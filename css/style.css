@@ -759,7 +759,7 @@ a {
       
       .section .section-center {
         position: absolute;
-        top: 88%;
+        top: 84%;
         left: 0;
         right: 0;
         -webkit-transform: translateY(-50%);
@@ -785,7 +785,7 @@ a {
       
       .booking-form {
         background: rgba(5, 5, 5, 0.616);
-        border-radius: 5px;
+        border-radius: none;
         padding: 20px 0px;
       }
       
@@ -801,7 +801,7 @@ a {
       
       .booking-form .form-group {
         position: relative;
-        padding: 0px 0px;
+        padding: 3px 0px;
         margin: 0px 0px;
         /* width: 250px; */
       }
@@ -816,7 +816,7 @@ a {
         /* width: 80%; */
         font-size: 13px;
         color: #1d1d1d;
-        font-weight: 600;
+        font-weight: 400;
         padding-left: 10px;
       }
       
@@ -867,7 +867,7 @@ a {
       .booking-form .form-button label {
         position: relative;
         padding-top: 4px;
-        font-weight: 400;
+        font-weight: 600;
         color: #181818;
         margin-bottom: 0px;
         
@@ -887,7 +887,7 @@ a {
         .booking-form .form-button input:focus {
         background: #ffffff;
         color: #1b1b1b;
-        font-weight: 600;
+        font-weight: 400;
         
       }
       
@@ -1070,7 +1070,7 @@ a {
       position: relative;
       width: 100%;
       padding: 45px 0 15px 0;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.842)), url(../images/hero_3.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.842)), url(../images/home_1.jpg);
       background-position: center;
       background-attachment: fixed;
 
@@ -1171,7 +1171,7 @@ a {
     /* --- TESTIMONIALS --- */
 
     .sky{
-      background: linear-gradient(0deg, rgba(47, 47, 47, 0.62), rgba(47, 47, 47, 0.62)), url(../images/hero_2.png);
+      background: linear-gradient(0deg, rgba(47, 47, 47, 0.62), rgba(47, 47, 47, 0.62)), url(../images/qualities_1.jpg);
       background-position: center;
       background-size: cover;
       padding: 80px 0px;
