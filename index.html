@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -57,12 +58,10 @@
                   <li><a href="about-us.html" class="nav-link">About Us</a></li>
                   <li class="dropdown"><a href="services.html" class="nav-link"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span></a>
-                        </li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
+                        <li><a href="services.html">Tickets</a></li>
+                        <li><a href="services.html">Cruise</a></li>
+                        <li><a href="services.html">Hotels Reservation</a></li>
+                        <li><a href="services.html">Travel Packages</a></li>
                       </ul>
                   </li>
                 </ul>
@@ -84,8 +83,8 @@
             <div class="col-lg-4">
               <nav class="site-navigation text-left mr-auto" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                  <li><a href="about.html" class="nav-link xr">Contact Us</a></li>
-                  <li><a href="blog.html" class="nav-link xr">Empty Legs</a></li>
+                  <li><a href="contact.html" class="nav-link xr">Contact Us</a></li>
+                  <li><a href="empty-legs.html" class="nav-link xr">Empty Legs</a></li>
                   <!-- <li><a href="contact.html" class="nav-link">Contact</a></li> -->
                 </ul>
               </nav>
@@ -370,6 +369,41 @@
                             </div>
                           </div>
                         
+                        
+                  </div>
+                </form>
+
+
+                 <!-- ADDITIONAL FLIGHT LEG( FORM 3 ) -->
+
+                 <form id="booking_4">
+                  <div class="row no-margin container">
+                     
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        
+                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                          
+                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                            
+                            <input class="form-control multi-leg" id="date" type="datetime" placeholder="02-Jun-2021" >
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                              
+                              <input class="form-control multi-leg" type="datetime" placeholder="02-Jun-2021">
+                            </div>
+                          </div>
+                        
                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="closer_x" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
                           </svg>
@@ -380,7 +414,7 @@
 
 
                 <div class="container py-3">
-                    <button id="multi-leg" class="submit-1-btn btn-lg">Add Flight</button>
+                    <!-- <button id="multi-leg" class="submit-1-btn btn-lg">Add Flight</button> -->
                    <button class="submit-btn btn-lg">Show Flights</button>
                 </div>
 
@@ -422,7 +456,7 @@
       <div class="service">
         <div class="container">
             <div class="row p-2">
-                <div class="col-6 col-md-3"  data-aos="fade-right">
+                <div class="col-6 col-md-3"  data-aos="fade-right" data-aos-delay="100">
                     <div class="service-item">
                         <img src="images/ticket.png" alt="Icon">
                         <h3 class="oxy">Tickets</h3>
@@ -430,10 +464,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                        <a href="" class="btn btn-warning btn-lg ">Read More</a>
+                        <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3"  data-aos="fade-right">
+                <div class="col-6 col-md-3"  data-aos="fade-right" data-aos-delay="100">
                     <div class="service-item">
                         <img src="images/plane.png" alt="Icon">
                         <h3 class="oxy">Cruise</h3>
@@ -441,10 +475,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                    <a href="" class="btn btn-warning btn-lg ">Read More</a>
+                    <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3" data-aos="fade-left">
+                <div class="col-6 col-md-3" data-aos="fade-left" data-aos-delay="100">
                     <div class="service-item">
                         <img src="images/hotel.png" alt="Icon">
                         <h3 class="oxy">Hotels</h3>
@@ -452,10 +486,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                    <a href="" class="btn btn-warning btn-lg ">Read More</a>
+                    <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3" data-aos="fade-left">
+                <div class="col-6 col-md-3" data-aos="fade-left" data-aos-delay="100">
                   <div class="service-item">
                       <img src="images/package.png" alt="Icon">
                       <h3 class="oxy">Packages</h3>
@@ -463,13 +497,13 @@
                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                       </p>
-                  <a href="" class="btn btn-warning btn-lg">Read More</a>
+                  <a href="services.html" class="btn btn-warning btn-lg">Read More</a>
                   </div>
               </div>
                
             </div>
 
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
                <h3 class="cinzel text-center satisfy pt-2">Satisfaction Guaranteed</h3>
             <p class="lead text-center">While working with us, we want you to be completely happy with the experience. If you have questions about us, our services,
               get in touch! We hope you continue to book with us for many years to come. </p>
@@ -483,7 +517,7 @@
 
     <!-- SERVICES HEADER -->
 
-    <div class="intro-head mb-5" data-aos="fade-up">
+    <div class="intro-head mb-5" data-aos="fade-up" data-aos-delay="100">
       <div class="container">
           <h3 class="py-3 cinzel">APPROVED JETS LUXURY A TO BE IN THE BEST FEELING AT HAND</h3>
       </div>
@@ -493,7 +527,7 @@
 
     <!-- BACKGROUND APPROVED -->
 
-    <div class="container comp-background"  data-aos="fade-up">
+    <div class="container comp-background"  data-aos="fade-up" data-aos-delay="100">
       <div class="row">
         <div class="col-md-6">
 
@@ -528,18 +562,18 @@
       
 
       <!-- TESTIMONIALS -->
-        <div class="container-fluid mt-5 sky">
+        <!-- <div class="container-fluid mt-5 sky">
             <h2 class="cinzel text-center pt-2">Testimonials</h2>
             <p class="lead text-center">At APJ we take client confidentiality with utmost privacy.<br>
                 We have to keep the testimonial private  </p>
 
-        </div>
+        </div> -->
        <!-- TESTIMONIALS END -->
 
 
         <!-- QUALITIES -->
         
-        <div class="container-fluid qualities"  data-aos="fade-up">
+        <div class="container-fluid qualities"  data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-md-6 px-0">
                 <img src="images/about_2.jpg" class=" w-100" alt="...">
@@ -591,7 +625,7 @@
           
           </div>
 
-          <div class="c_background container"  data-aos="fade-up">
+          <div class="c_background container"  data-aos="fade-up " data-aos-delay="100">
 
             <h3 id="heading">Our Background</h3>
               <p class="lead">We are people who are well-versed in the fun and rigors of traveling. Our travel agency came together to help other people plan and book their dream vacations. We have over 40 years of travel planning between us!</p>
@@ -612,7 +646,7 @@
                         flights throughout the United States, Europe, Asia,
                         South America and the United Arab of Emirates.
                       </p>
-                      <a href="" class="btn btn-warning btn-lg">Read More</a>
+                      <a href="about-us.html" class="btn btn-warning btn-lg">Read More</a>
                   </div>
           
                   <div class="col-md-6  pj_kev">
@@ -621,6 +655,99 @@
                   
                 </div>   <!-- Row End -->
           </div>  <!-- Container End -->
+
+
+
+
+          
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="images/team/team_1.png" class="testimonial-img" alt="">
+                <h3>Kojo Mensah Jones</h3>
+                <h4>Ceo &amp; Founder of Empire Domus</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="images/team/team_2.png" class="testimonial-img" alt="">
+                <h3> Musa Mousse</h3>
+                <h4>Partner &amp; Marketing Director</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="images/team/team_3.png" class="testimonial-img" alt="">
+                <h3>Momodou Samba </h3>
+                <h4>Partner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="images/team/team_1.png" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="images/team/team_1.png" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+
+
+
+
+
+
 
            <!-- MAILING LIST -->
         <div class="container-fluid mt-5 sky mailing">
@@ -744,6 +871,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
+    <script src="css/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
           window.addEventListener('scroll', function () {
@@ -752,6 +880,6 @@
             header.classList.toggle('scrolling-active', windowPosition);
         })
     </script>
-    
+
   </body>
 </html>

@@ -105,6 +105,21 @@ $(function() {
 });
 
 
+	// Empty Legs
+
+	$(document).ready(function(){
+		$("#myInput").on("keyup",function(){
+		var value = $(this).val().toLowerCase();
+		$("#myTable tr").filter(function(){
+		$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	
+		});
+	
+		});
+	
+		});
+
+
 	// Hidden Forms 
 
 	$(document).ready(function() {
@@ -126,6 +141,12 @@ $(function() {
 	});
 
 	$(document).ready(function() {
+		$("#multi-leg").click(function() {
+			$("#booking_4").show(1000);
+		});
+	});
+
+	$(document).ready(function() {
 		$("#closer").click(function() {
 			$("#round-trip").hide(1000);
 		});
@@ -140,6 +161,12 @@ $(function() {
 	$(document).ready(function() {
 		$("#closer_x").click(function() {
 			$("#booking_3").hide(1000);
+		});
+	});
+
+	$(document).ready(function() {
+		$("#closer_x").click(function() {
+			$("#booking_4").hide(1000);
 		});
 	});
 
@@ -161,5 +188,24 @@ $(function() {
    */
   AOS.init({disable: 'mobile'});
 	
+
+   /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+
 	
-		
