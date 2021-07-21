@@ -23,6 +23,10 @@
      <link href="css/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="css/aos/aos.css" rel="stylesheet">
 
+    <!-- Autocomplete Helper -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" > -->
+    
+
 
     <title>Approved Jetz</title>
   </head>
@@ -95,122 +99,7 @@
         </div>
       </header> 
 
-      <!-- BOOKING FORMS -->
-
-      <!-- <div id="booking" class="section">
-        <div class="section-center">
-          <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
-            
-              <div class="col-md-7 col-md-offset-1 ">
-                <div class="booking-form">
-                  <form>
-                    <div class="form-group" id="headline">
-                      <div class="form-checkbox">
-                      <label for="one-way">
-                          <input type="radio" id="one-way" name="flight-type">
-                          <span></span>One way
-                        </label>
-                        <label for="roundtrip">
-                          <input type="radio" id="roundtrip" name="flight-type">
-                          <span></span>Roundtrip
-                        </label>
-                        <label for="multi-city">
-                          <input type="radio" id="multi-city" name="flight-type">
-                          <span></span>Multi-City
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <span class="form-label">Flying from</span>
-                          <input class="form-control" type="text" placeholder="City or airport">
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <span class="form-label">Flyning to</span>
-                          <input class="form-control" type="text" placeholder="City or airport">
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <span class="form-label">Flyning to</span>
-                          <input class="form-control" type="text" placeholder="City or airport">
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <span class="form-label">Flyning to</span>
-                          <input class="form-control" type="text" placeholder="City or airport">
-                        </div>
-                      </div>
-
-                    </div>   
-                  
-                    
-
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">Departing</span>
-                          <input class="form-control" type="date" required>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">Returning</span>
-                          <input class="form-control" type="date" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4 col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">Adults (18+)</span>
-                          <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-md-6">
-                        <div class="form-group">
-                          <span class="form-label">Children (0-17)</span>
-                          <select class="form-control">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-md-12">
-                        <div class="form-group">
-                          <span class="form-label">Travel class</span>
-                          <select class="form-control">
-                            <option>Economy class</option>
-                            <option>Business class</option>
-                            <option>First class</option>
-                          </select>
-                          <span class="select-arrow"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-btn text-center">
-                      <button class="submit-btn">Show flights</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
+ 
 
        <!-- BOOKING FORMS ( HORINZONTAL ) -->
 
@@ -237,13 +126,13 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         
-                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                        <input id="input" class="form-control one-way" type="text" placeholder="Enter City or Airport..">
                       </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                           
-                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                          <input id="input_s" class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
                         </div>
                       </div>
                       <div class="col-md-2">
@@ -314,7 +203,7 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         
-                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                        <input id="input_1" class="form-control one-way" type="text" placeholder="Enter City or Airport..">
                       </div>
                     </div>
                     <div class="col-md-3">
@@ -456,7 +345,7 @@
       <div class="service">
         <div class="container">
             <div class="row p-2">
-                <div class="col-6 col-md-3"  data-aos="fade-right" data-aos-delay="100">
+                <div class="col-6 col-md-3"  data-aos="fade-right">
                     <div class="service-item">
                         <img src="images/ticket.png" alt="Icon">
                         <h3 class="oxy">Tickets</h3>
@@ -464,10 +353,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                        <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
+                        <a href="" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3"  data-aos="fade-right" data-aos-delay="100">
+                <div class="col-6 col-md-3"  data-aos="fade-right">
                     <div class="service-item">
                         <img src="images/plane.png" alt="Icon">
                         <h3 class="oxy">Cruise</h3>
@@ -475,10 +364,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                    <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
+                    <a href="" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3" data-aos="fade-left" data-aos-delay="100">
+                <div class="col-6 col-md-3" data-aos="fade-left">
                     <div class="service-item">
                         <img src="images/hotel.png" alt="Icon">
                         <h3 class="oxy">Hotels</h3>
@@ -486,10 +375,10 @@
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                             Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                         </p>
-                    <a href="services.html" class="btn btn-warning btn-lg ">Read More</a>
+                    <a href="" class="btn btn-warning btn-lg ">Read More</a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3" data-aos="fade-left" data-aos-delay="100">
+                <div class="col-6 col-md-3" data-aos="fade-left">
                   <div class="service-item">
                       <img src="images/package.png" alt="Icon">
                       <h3 class="oxy">Packages</h3>
@@ -497,13 +386,13 @@
                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.
                       </p>
-                  <a href="services.html" class="btn btn-warning btn-lg">Read More</a>
+                  <a href="" class="btn btn-warning btn-lg">Read More</a>
                   </div>
               </div>
                
             </div>
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="container" data-aos="fade-up">
                <h3 class="cinzel text-center satisfy pt-2">Satisfaction Guaranteed</h3>
             <p class="lead text-center">While working with us, we want you to be completely happy with the experience. If you have questions about us, our services,
               get in touch! We hope you continue to book with us for many years to come. </p>
@@ -517,7 +406,7 @@
 
     <!-- SERVICES HEADER -->
 
-    <div class="intro-head mb-5" data-aos="fade-up" data-aos-delay="100">
+    <div class="intro-head mb-5" data-aos="fade-up">
       <div class="container">
           <h3 class="py-3 cinzel">APPROVED JETS LUXURY A TO BE IN THE BEST FEELING AT HAND</h3>
       </div>
@@ -527,7 +416,7 @@
 
     <!-- BACKGROUND APPROVED -->
 
-    <div class="container comp-background"  data-aos="fade-up" data-aos-delay="100">
+    <div class="container comp-background"  data-aos="fade-up">
       <div class="row">
         <div class="col-md-6">
 
@@ -573,7 +462,7 @@
 
         <!-- QUALITIES -->
         
-        <div class="container-fluid qualities"  data-aos="fade-up" data-aos-delay="100">
+        <div class="container-fluid qualities"  data-aos="fade-up">
           <div class="row">
             <div class="col-md-6 px-0">
                 <img src="images/about_2.jpg" class=" w-100" alt="...">
@@ -625,7 +514,7 @@
           
           </div>
 
-          <div class="c_background container"  data-aos="fade-up " data-aos-delay="100">
+          <div class="c_background container"  data-aos="fade-up">
 
             <h3 id="heading">Our Background</h3>
               <p class="lead">We are people who are well-versed in the fun and rigors of traveling. Our travel agency came together to help other people plan and book their dream vacations. We have over 40 years of travel planning between us!</p>
@@ -873,6 +762,7 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="css/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
           window.addEventListener('scroll', function () {
             let header = document.querySelector('header');
@@ -880,6 +770,608 @@
             header.classList.toggle('scrolling-active', windowPosition);
         })
     </script>
+
+<script>
+    const field = document.getElementById('input');
+    const ac = new Autocomplete(field, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+    const field2 = document.getElementById('input_s');
+    const ac_s = new Autocomplete(field2, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+    const field1 = document.getElementById('input_1');
+    const ac_1 = new Autocomplete(field1, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+  
+    ac.setData([
+        {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+     
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+     
+    ]);
+  
+    // test
+    ac_s.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
+    ac_1.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+  
+    
+  </script>
 
   </body>
 </html>
