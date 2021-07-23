@@ -94,8 +94,8 @@ $(function() {
 		$(document).mouseup(function(e) {
 	    var container = $(".site-mobile-menu");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
+	      if ( $('#mainer').hasClass('offcanvas-menu') ) {
+					$('#mainer').removeClass('offcanvas-menu');
 				}
 	    }
 		});
@@ -135,13 +135,13 @@ $(function() {
 	});
 
 	$(document).ready(function() {
-		$("#multi-leg").click(function() {
+		$("#add_fl").click(function() {
 			$("#booking_3").show(1000);
 		});
 	});
 
 	$(document).ready(function() {
-		$("#multi-leg").click(function() {
+		$("#add_fl").click(function() {
 			$("#booking_4").show(1000);
 		});
 	});
@@ -159,16 +159,17 @@ $(function() {
 	});
 
 	$(document).ready(function() {
-		$("#closer_x").click(function() {
+		$("#remove_fl1").click(function() {
 			$("#booking_3").hide(1000);
 		});
 	});
 
 	$(document).ready(function() {
-		$("#closer_x").click(function() {
+		$("#remove_fl2").click(function() {
 			$("#booking_4").hide(1000);
 		});
 	});
+	
 
 	
 	  /**
