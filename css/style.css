@@ -884,7 +884,7 @@ a {
        .section {
         position: relative;
         height: 20vh;
-        z-index: 1999;
+        z-index: 1000;
       
       }
       
