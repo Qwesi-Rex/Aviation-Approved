@@ -227,7 +227,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                           
-                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport.."  id="input_2">
                         </div>
                       </div>
                       <div class="col-md-2">
@@ -259,13 +259,13 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         
-                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                        <input id="input_3" class="form-control one-way" type="text" placeholder="Enter City or Airport..">
                       </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                           
-                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                          <input id="input_4" class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
                         </div>
                       </div>
                       <div class="col-md-2">
@@ -297,13 +297,13 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         
-                        <input class="form-control one-way" type="text" placeholder="Enter City or Airport..">
+                        <input id="input_5" class="form-control one-way" type="text" placeholder="Enter City or Airport..">
                       </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                           
-                          <input class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
+                          <input id="input_6" class="form-control round-trip" type="text" placeholder="Enter City or Airport..">
                         </div>
                       </div>
                       <div class="col-md-2">
@@ -825,6 +825,21 @@
             console.log("user selected:", label, value);
         }
     });
+
+    const field3 = document.getElementById('input_2');
+    const ac_2 = new Autocomplete(field3, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+   
+
+  
+
   
     ac.setData([
         {
@@ -1394,6 +1409,996 @@
 
 
     ]);
+
+    ac_2.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
+    const field4 = document.getElementById('input_3');
+    const ac_3 = new Autocomplete(field4, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+    ac_3.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
+
+    const field5 = document.getElementById('input_4');
+    const ac_4 = new Autocomplete(field5, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+    ac_4.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
+
+    
+    const field6 = document.getElementById('input_5');
+    const ac_5 = new Autocomplete(field6, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+    ac_5.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
+     
+    const field7 = document.getElementById('input_6');
+    const ac_6 = new Autocomplete(field7, {
+        data: [{label: "I'm a label", value: 42}],
+        maximumItems: 5,
+        treshold: 1,
+        onSelectItem: ({label, value}) => {
+            console.log("user selected:", label, value);
+        }
+    });
+
+    ac_6.setData([
+    {
+            "label": "Miami-Opa Locka Executive Airport, FL (OPF)",
+            "value": "FL (OPF)"
+        },
+        {
+            "label": "Greater Rochester International Airport, NY (ROC)",
+            "value": "NY (ROC)"
+        },
+        {
+            "label": "Chicago Midway International Airport, ILG (MDW)",
+            "value": "ILG (MDW)"
+        },
+        {
+            "label": "Teterboro Airport, NJ (TEB)",
+            "value": "NJ (TEB)"
+        },
+        {
+            "label": "Melbourne Orlando International Airport, FL (MLB)",
+            "value": "FL (MLB)"
+        },
+        {
+            "label": "Beverly Regional Airport, MA (BVY)",
+            "value": "MA (BVY)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Sangster International Airport, JM (MKJS)",
+            "value": "JM (MKJS)"
+        },
+        {
+            "label": "Palm Beach International Airport, FL (PBI)",
+            "value": "FL (PBI)"
+        },
+        {
+            "label": "Boston Logan International Airport, MA (BOS)",
+            "value": "MA (BOS)"
+        },
+        {
+            "label": "Boca Raton Airport, FL (BCT)",
+            "value": "FL (BCT)"
+        },
+        {
+            "label": "Aspen/Pitkin County Airport, CO (ASE)",
+            "value": "CO (ASE)"
+        },
+        {
+            "label": "McCarran International Airport, NV (LAS)",
+            "value": "NV (LAS)"
+        },
+        {
+            "label": "Naples Airport, FL (APF)",
+            "value": "FL (APF)"
+        },
+        {
+            "label": "Heber Valley Airport, UT (HCR)",
+            "value": "UT (HCR)"
+        },
+        {
+            "label": "Florida Keys/Marathon International Airport, FL (MTH)",
+            "value": "FL (MTH)"
+        },
+        {
+            "label": "Charlotte Douglas International Airport, NC (CLT)",
+            "value": "NC (CLT)"
+        },
+        {
+            "label": "Orlando Executive Airport, FL (ORL)",
+            "value": "FL (ORL)"
+        },
+        {
+            "label": "(HPN) White Plains, NY",
+            "value": "(HPN)"
+        },
+        {
+            "label": "(JVY) Jeffersonville, IN",
+            "value": "(JVY)"
+        },
+        {
+            "label": "(ASE) Aspen, CO",
+            "value": "(ASE)"
+        },
+        {
+            "label": "(OQU) N, Kingstown, RI",
+            "value": "(OQU)"
+        },
+        {
+            "label": "(PDK) Atlanta, GA",
+            "value": "(PDK)"
+        },
+        {
+            "label": "(LFMN) Nice, Provence-Alpes-Côte-d'Azur",
+            "value": "(LFMN)"
+        },
+        {
+            "label": "(KSGH) Springfield, Ohio",
+            "value": "(KSGH)"
+        },
+        {
+            "label": "(KHPN) White Plains, New York",
+            "value": "(KHPN)"
+        },
+        {
+            "label": "(KVNY) Van Nuys, California",
+            "value": "(KVNY)"
+        },
+        {
+            "label": "(KBDL) Hartford, Connecticut",
+            "value": "(KBDL)"
+        },
+        {
+            "label": "(KEGE) Eagle, Colorado",
+            "value": "(KEGE)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KLIT) Little Rock, Arkansas",
+            "value": "(KLIT)"
+        },
+        {
+            "label": "(KLAS) Las Vegas, Nevada",
+            "value": "(KLAS)"
+        },
+        {
+            "label": "(KCLE) Cleveland, Ohio",
+            "value": "(KCLE)"
+        },
+        {
+            "label": "(KPHL) Philadelphia, Pennsylvania",
+            "value": "(KPHL)"
+        },
+        {
+            "label": "(KTEB) Teterboro, New Jersey",
+            "value": "(KTEB)"
+        },
+        {
+            "label": "(KHKY) Hickory, North Carolina",
+            "value": "(KHKY)"
+        },
+        {
+            "label": "(KDTW) Detroit, Michigan",
+            "value": "(KDTW)"
+        },
+
+        {
+            "label": " John F. Kennedy International Airport (JFK)",
+            "value": "(JFK)"
+        },
+
+        {
+            "label": "Newark Liberty International Airport (EWR)",
+            "value": "(EWR)"
+        },
+
+        {
+            "label": "LaGuardia Airport (LGA)",
+            "value": "(LGA)"
+        },
+
+        {
+            "label": "Kotoka International Airport (ACC)",
+            "value": "(ACC)"
+        },
+
+        {
+            "label": "Kumasi International Airport (KMS)",
+            "value": "(KMS)"
+        },
+
+        {
+            "label": "	Tamale Airport (TML)",
+            "value": "(TML)"
+        },
+
+
+        {
+            "label": "Takoradi Airport (TKD)",
+            "value": "(TKD)"
+        },
+
+
+    ]);
+
   
     
   </script>

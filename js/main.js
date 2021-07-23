@@ -120,7 +120,7 @@ $(function() {
 		});
 
 
-	// Hidden Forms 
+	// Flight Types Hidden Forms 
 
 	$(document).ready(function() {
 		$("#toggle").click(function() {
