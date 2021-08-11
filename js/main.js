@@ -76,18 +76,19 @@ $(function() {
 		  /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('site-header-scrolled')
-      } else {
-        selectHeader.classList.remove('site-header-scrolled')
-      }
-    }
-    window.addEventListener('load', site-headerScrolled)
-    onscroll(document, site-headerScrolled)
-  }
+
+//   let selectHeader = select('#header')
+//   if (selectHeader) {
+//     const headerScrolled = () => {
+//       if (window.scrollY > 100) {
+//         selectHeader.classList.add('site-header-scrolled')
+//       } else {
+//         selectHeader.classList.remove('site-header-scrolled')
+//       }
+//     }
+//     window.addEventListener('load', site-headerScrolled)
+//     onscroll(document, site-headerScrolled)
+//   }
 
 
 		// click outisde offcanvas
@@ -100,6 +101,8 @@ $(function() {
 	    }
 		});
 	}; 
+	siteMenuClone();
+	
 
 });
 
