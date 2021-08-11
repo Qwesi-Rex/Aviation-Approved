@@ -1017,20 +1017,11 @@ a {
         }
       
         .booking-form .form-button input:focus {
-          background: #ffffff;
-          color: #1b1b1b;
-          font-weight: 400;
-          
-        }
-
-      /* .booking-form .form-button input:hover {
         background: #ffffff;
         color: #1b1b1b;
         font-weight: 400;
         
-      } */
-
-     
+      }
       
       .booking-form .form-btn {
         padding: 0px;
@@ -1232,8 +1223,8 @@ a {
     .service {
       position: relative;
       width: 100%;
-      padding: 45px 0 15px 0; 
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.842)), url(../images/img-jets-views/ap-11.jpg);
+      padding: 45px 0 15px 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.842)), url(../images/home_1.jpg);
       background-position: center;
       background-attachment: fixed;
      
