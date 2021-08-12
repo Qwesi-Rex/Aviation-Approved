@@ -108,6 +108,7 @@ a {
 }
 
 #pusher{
+  position: relative;
   /* margin-top: 180px; */
 }
 
@@ -165,6 +166,7 @@ a {
         padding: 0px 0px;
 
       }
+      
     }
 
     
@@ -655,6 +657,12 @@ a {
       /* --- 
       BODY
       ----------------*/
+      .webapp{
+        margin: 0px 20px;
+        z-index: 999;
+      }
+
+      
 
       .welcome-ad p{
         font-size: 17px;
@@ -1965,7 +1973,7 @@ a {
       }
 
       .welcome-ad{
-        margin-top: 200px;
+        margin-top: 20px;
         z-index: 1999;
       }
 
@@ -2210,7 +2218,7 @@ a {
       
       .hero{
         display: block;
-        background-image: url(../images/home.jpg);
+        background-image: url(../images/img-jets-views/ap-1.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -2225,7 +2233,7 @@ a {
       }
 
       .welcome-ad{
-        margin-top: 200px;
+        margin-top: 50px;
         z-index: 1999;
       }
 
