@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/wpn6q8ccgtf1/repositories/Aviation-Approved 
+    - /bin/cp -R images $DEPLOYPATH
