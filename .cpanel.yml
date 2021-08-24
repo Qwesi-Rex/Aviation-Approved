@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wpn6q8ccgtf1/public_html/Aviation-Approved
+    - export DEPLOYPATH=/home/wpn6q8ccgtf1/public_html/
     - /bin/cp -R images $DEPLOYPATH
