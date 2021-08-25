@@ -80,7 +80,7 @@ a {
 
 
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: block;
   background-size: cover;
@@ -177,12 +177,7 @@ a {
       }
     }
 
-    @media (max-width:425px){
-      .logo img{
-        margin-top: 0px;
-        max-width: 250px;
-      }
-    }
+   
 
   /* .site-navbar .site-logo {
     margin: 0;
@@ -244,7 +239,7 @@ a {
       }
 
       .site-navbar .site-navigation .site-menu > li > a:hover {
-      /* background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+      /* background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
       color: #ffffff; */
       border-bottom: 1px solid #cacaca;
       border-radius: 25px;
@@ -254,7 +249,7 @@ a {
       }
 
       .site-navbar .site-navigation .site-menu > li.active > a {
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
         color: #ffffff;
         border-radius: 25px;
         font-weight: 500;
@@ -539,13 +534,13 @@ a {
       
 
       .site-mobile-menu .site-nav-wrap li .nav-link.active {
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
         color: #ffffff;
         border-radius: 25px;
       }
 
       .site-mobile-menu .site-nav-wrap li.active > a {
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
         color: #ffffff;
         border-radius: 25px;
       }
@@ -844,7 +839,7 @@ a {
       
       .booking-form .submit-btn {
         color: #fff;
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
         font-weight: 400;
         height: 65px;
         font-size: 18px;
@@ -1045,7 +1040,7 @@ a {
       }
       
       .booking-form .form-btn {
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
         border: none;
         /* display: block; */
         border-radius: 0px;
@@ -1058,7 +1053,7 @@ a {
       }
 
       .booking-form .form-btn:hover {
-        background: #855600 !important;
+        background: #850000 !important;
         border: none!important;
         color: rgb(255, 255, 255) !important;
      
@@ -1156,7 +1151,7 @@ a {
 
          /* ---  ABOUT SECTION ----------------*/
       .intro-head{
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
       }
       
       .intro-head h2{
@@ -1190,7 +1185,7 @@ a {
 .team-section .team-item .team-img {
   width: 180px;
   border-radius: 50%;
-  border: 6px solid rgb(153, 105, 23);
+  border: 6px solid rgb(153, 23, 23);
   margin: 0 auto;
 }
 
@@ -1204,7 +1199,7 @@ a {
 
 .team-section .team-item h4 {
   font-size: 14px;
-  color: rgb(247, 198, 115);
+  color: rgb(251, 251, 251);
   margin: 0 0 15px 0;
   font-weight: 200;
 }
@@ -1220,7 +1215,7 @@ a {
 
 .social-links a {
   font-size: 25px;
-  color: rgba(124,84,17,1);
+  color: rgb(124, 17, 17);
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -1228,7 +1223,7 @@ a {
 }
 
 .social-links a:hover {
-  color: rgb(189, 120, 0);
+  color: rgb(255, 255, 255);
 }
 
 
@@ -1260,7 +1255,7 @@ a {
       margin-bottom: 30px;
       padding: 50px 17px;
       text-align: center;
-      border: 2px solid rgba(154,108,31,1);
+      border: 1px solid rgb(255, 255, 255);
       border-radius: 15px;
       transition: .3s;
       color: #ffffff;
@@ -1268,7 +1263,7 @@ a {
 
     .service .service-item:hover {
       border-color: #ffffff;
-      box-shadow: 0 0 30px rgba(154,108,31,1);
+      box-shadow: 0 0 30px rgb(154, 31, 31);
     }
 
     .service .service-item img {
@@ -1299,7 +1294,7 @@ a {
     }
 
     .btn-warning{
-      background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+      background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
       border: none;
       color: #ffffff;
       border-radius: 25px !important;
@@ -1310,7 +1305,7 @@ a {
     .btn-warning:hover{
       background: #ffffff !important;
       border: none!important;
-      color: rgb(126, 84, 12) !important;
+      color: rgb(126, 12, 12) !important;
       border-radius: 25px !important;
     }
 
@@ -1389,7 +1384,7 @@ a {
     }
 
     .btn-warning{
-      background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+      background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
       border: none;
       color: #ffffff;
       border-radius: 25px !important;
@@ -1401,7 +1396,7 @@ a {
     .btn-warning:hover{
       background: #ffffff !important;
       border: none!important;
-      color: rgb(126, 84, 12) !important;
+      color: rgb(126, 12, 12) !important;
       border-radius: 25px !important;
     }
 
@@ -1711,14 +1706,15 @@ a {
         background: none;
         font-size: 16px;
         padding: 0 20px 2px 20px;
-        background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);
         color: #fff;
         transition: 0.3s;
         border-radius: 50px;
       }
       
        .footer-newsletter form input[type="submit"]:hover {
-        background: rgba(124,84,17,1);
+        background: rgb(246, 246, 246);
+        color: #000;
       }
       
 
@@ -1781,7 +1777,7 @@ a {
 }
 
 .btn-warning_2{
-  background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+  background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
   border: none;
   color: #ffffff;
   border-radius: 25px !important;
@@ -1811,7 +1807,7 @@ a {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: linear-gradient( 180deg, rgb(22, 20, 16) 0%, rgb(104, 70, 13) 50%, rgb(70, 46, 5) 100%);  
+  background: linear-gradient( 180deg, rgb(22, 20, 16) 0%, rgb(104, 13, 13) 50%, rgb(70, 5, 5) 100%);  
   /* padding: 0 0 30px 0; */
   color: #fff;
   font-family: 'Montserrat', arial, sans-serif;
@@ -1850,8 +1846,8 @@ a {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%);  
-  color: #151515;
+  background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%);  
+  color: #ffffff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1863,7 +1859,7 @@ a {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: rgb(243, 166, 34);
+  background: rgb(255, 255, 255);
   color: #151515;
   text-decoration: none;
 }
@@ -2096,7 +2092,7 @@ a {
     }
 
     .btn-warning{
-      background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+      background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
       border: none;
       color: #ffffff;
       border-radius: 25px !important;
@@ -2108,7 +2104,7 @@ a {
     .btn-warning:hover{
       background: #ffffff !important;
       border: none!important;
-      color: rgb(126, 84, 12) !important;
+      color: rgb(126, 12, 12) !important;
       border-radius: 25px !important;
     }
 
@@ -2195,6 +2191,19 @@ a {
 
     @media (max-width: 425px){
 
+
+        /* Header */
+        .hero {
+          height: 100vh;
+          width: 100%;
+          display: block;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          
+        }
+
       button .dropdown-item{
         font-size: 14px !important;
       }
@@ -2221,9 +2230,8 @@ a {
 
 
       .logo img{
-        width: 200px;
+        width: 250px;
     
-  
       }
 
       #vid{
@@ -2371,7 +2379,7 @@ a {
     }
 
     .btn-warning{
-      background: linear-gradient( 180deg, rgba(203,146,48,1) 0%, rgba(154,108,31,1) 50%, rgba(124,84,17,1) 100%) !important;
+      background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
       border: none;
       color: #ffffff;
       border-radius: 25px !important;
@@ -2383,7 +2391,7 @@ a {
     .btn-warning:hover{
       background: #ffffff !important;
       border: none!important;
-      color: rgb(126, 84, 12) !important;
+      color: rgb(126, 12, 12) !important;
       border-radius: 25px !important;
     }
 
@@ -2482,6 +2490,11 @@ a {
         
     @media (max-width: 375px){
 
+      /* ------ Logo ---------- */
+      .logo img{
+        width: 220px;
+    
+      }
 
        /* ----------- BOOKING FORMS INLINE ---------------- */
 
