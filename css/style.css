@@ -221,7 +221,7 @@ a {
       text-transform: uppercase;
       font-weight: 400;
       font-family: 'Rajdhani', sans-serif;
-      font-size: 17px;
+      font-size: 15px;
        transition: 1s;
       }
 
@@ -1341,7 +1341,7 @@ a {
       margin-bottom: 30px;
       padding: 12px 20px;
       text-align: center;
-      border: 2px solid rgba(154,108,31,1);
+      border: 1px solid rgb(255, 255, 255);
       border-radius: 15px;
       transition: .3s;
       color: #ffffff;
@@ -1350,7 +1350,7 @@ a {
 
     .service .service-item:hover {
       border-color: #ffffff;
-      box-shadow: 0 0 30px rgba(154,108,31,1);
+      box-shadow: 0 0 30px rgb(154, 31, 31);
     }
 
     .service .service-item img {
@@ -1902,7 +1902,7 @@ a {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #ff5151;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -2049,7 +2049,7 @@ a {
       margin-bottom: 30px;
       padding: 12px 10px;
       text-align: center;
-      border: 2px solid rgba(154,108,31,1);
+      border: 1px solid rgb(255, 255, 255);
       border-radius: 15px;
       transition: .3s;
       color: #ffffff;
@@ -2058,7 +2058,7 @@ a {
 
     .service .service-item:hover {
       border-color: #ffffff;
-      box-shadow: 0 0 30px rgba(154,108,31,1);
+      box-shadow: 0 0 30px rgb(154, 31, 31);
     }
 
     .service .service-item img {
@@ -2336,7 +2336,7 @@ a {
       margin-bottom: 30px;
       padding: 12px 30px;
       text-align: center;
-      border: 2px solid rgba(154,108,31,1);
+      border: 1px solid rgb(255, 255, 255);
       border-radius: 15px;
       transition: .3s;
       color: #ffffff;
@@ -2345,7 +2345,7 @@ a {
 
     .service .service-item:hover {
       border-color: #ffffff;
-      box-shadow: 0 0 30px rgba(154,108,31,1);
+      box-shadow: 0 0 30px rgb(154, 31, 31);
     }
 
     .service .service-item img {
@@ -2543,7 +2543,7 @@ a {
         margin-bottom: 30px;
         padding: 12px 18px;
         text-align: center;
-        border: 2px solid rgba(154,108,31,1);
+        border: 1px solid rgb(255, 255, 255)5;
         border-radius: 15px;
         transition: .3s;
         color: #ffffff;
