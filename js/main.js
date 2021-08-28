@@ -122,6 +122,17 @@ $(function() {
 		});
 
 
+
+	// MORE ABOUT PJ KEV
+
+	$(document).ready(function() {
+		$("#extra-kev").click(function() {
+			$("#portfolio").toggle(1000);
+		});
+	});
+
+
+
 	// Flight Types Hidden Forms 
 
 	$(document).ready(function() {

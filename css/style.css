@@ -80,7 +80,7 @@ a {
 
 
 .hero {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   display: block;
   background-size: cover;
@@ -91,12 +91,33 @@ a {
 }
 
 .hero_2 {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   
+}
+
+.hero_3 {
+  
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  
+  
+}
+
+.hero_3 h2{
+  position: absolute;
+  top: 150px;
+  font-weight: bold;
+  /* text-shadow: 4px 4px 3px rgba(39, 39, 39, 0.637); */
+  /* left: 0px; */
+
 }
 
 #vid{
@@ -125,6 +146,12 @@ a {
 
 .cinzel{
   font-family: 'Cinzel', serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.cinzel-d{
+  font-family: 'Cinzel Decorative', cursive;
   font-weight: 400;
   color: #ffffff;
 }
@@ -1168,6 +1195,115 @@ a {
         text-transform: uppercase;
     }
 
+    /* ---------------------------
+    #More about PJ Kev
+    -----------------------------*/
+
+    
+    /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+#portfolio{
+  display: none;
+}
+
+.portfolio .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  height: 44vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.portfolio .member .member-info {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  transition: 0.2s;
+}
+
+.portfolio .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7px;
+  
+}
+
+.portfolio .member .member-info-content h5 {
+  padding: 5px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.portfolio .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  padding: 5px;
+  
+}
+
+.portfolio .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 70px;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+}
+
+.portfolio .member .social a {
+  transition: color 0.3s;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.portfolio .member .social a:hover {
+  color: #cda45e;
+}
+
+.portfolio .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.portfolio .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.561) 100%);
+  opacity: 1;
+  transition: bottom ease-in-out 0.2s;
+}
+
+.portfolio .member:hover .member-info-content {
+  bottom: 20px;
+  transition: bottom ease-in-out 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*--------------------------------------------------------------
@@ -1293,19 +1429,20 @@ a {
       text-align: center;
     }
 
-    .btn-warning{
+    .btn-about{
       background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
-      border: none;
       color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
       border-radius: 25px !important;
       transition: 1s;
     }
 
     
-    .btn-warning:hover{
+    .btn-about:hover{
       background: #ffffff !important;
       border: none!important;
-      color: rgb(126, 12, 12) !important;
+      color: rgb(0, 0, 0) !important;
       border-radius: 25px !important;
     }
 
@@ -1421,6 +1558,107 @@ a {
      }
 
 
+     /* ------------ Experiences ---------------- */
+
+      /* -----------------------------
+      #Experiences
+       -------------------------------*/
+       .hero_3 h2{
+       background-color: #ffffffb6;
+       border-radius: 25px;
+       padding: 20px;
+       color: #292929;
+
+      
+      }
+     
+
+     #ex-image img{
+      border-radius: 20px;
+      border: 1px solid #ffcfcf;
+      padding: 6px;
+      transition: .5s;
+
+     }
+
+     #ex-image img:hover {
+      border: none;
+      transform: scale(1.05);
+    }
+
+     hr{
+       background-color: rgb(255, 95, 95);
+     }
+
+
+
+
+
+     .sky h1::before {
+      content: "";
+      width: 90px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h1::after {
+      content: "";
+      width: 90px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::before {
+      content: "";
+      width: 90px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::after {
+      content: "";
+      width: 90px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+     .experience p{
+       font-size: 14px;
+     }
+
+        
+    .btn-ex{
+      background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
+      border: none;
+      color: #ffffff;
+      border-radius: 25px !important;
+      transition: 2s;
+      font-size: 16px;
+      padding: 10px 0px;
+      margin: 15px 0px;
+      text-transform: uppercase;
+      
+    }
+
+
+    .btn-ex:hover{
+      background: #ffffff !important;
+      border: none!important;
+      color: rgb(0, 0, 0) !important;
+      border-radius: 25px !important;
+    }
+
+     
+
+
      /* -------------- Empty-Legs Filtered Table  ------------ */
 
      .main_x{
@@ -1514,7 +1752,7 @@ a {
       /* background: linear-gradient(0deg, rgba(47, 47, 47, 0.62), rgba(47, 47, 47, 0.62)), url(../images/qualities_1.jpg); */
       background-position: center;
       background-size: cover;
-      padding: 80px 0px;
+      /* padding: 80px 0px; */
       background-attachment: fixed;
     }
 
@@ -1886,7 +2124,7 @@ a {
   padding: 5px 0;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -2010,6 +2248,93 @@ a {
       }
 
 
+
+        /* -----------------------------
+      #Experiences
+       -------------------------------*/
+       .hero_3 h2{
+        position: absolute;
+        top: 150px;
+        font-weight: bold;
+        font-size: 38px !important;
+        /* text-shadow: 4px 4px 3px rgba(39, 39, 39, 0.637); */
+        background-color: #ffffff;
+        color: #000;
+        /* left: 0px; */
+      
+      }
+
+      .experience p{
+        font-size: 12px;
+      }
+
+      .experience h3{
+        font-size: 22px;
+      }
+
+      .btn-ex{
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
+        border: none;
+        color: #ffffff;
+        border-radius: 25px !important;
+        transition: 2s;
+        font-size: 14px;
+        padding: 10px 0px;
+        margin: 15px 0px;
+        text-transform: uppercase;
+        
+      }
+  
+  
+      .btn-ex:hover{
+        background: #ffffff !important;
+        border: none!important;
+        color: rgb(0, 0, 0) !important;
+        border-radius: 25px !important;
+      }
+  
+
+      
+     .sky h1::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h1::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+
+
+
+
       /* ----------- BOOKING FORM ------------- */
 
       .section {
@@ -2094,7 +2419,7 @@ a {
     .btn-warning{
       background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
       border: none;
-      color: #ffffff;
+      color: #ffffff !important;
       border-radius: 25px !important;
       transition: 1s;
       font-size: 12px;
@@ -2191,9 +2516,92 @@ a {
 
     @media (max-width: 425px){
 
+      /* -----------------------------
+      #Experiences
+       -------------------------------*/
+       .hero_3 h2{
+        position: absolute;
+        top: 150px;
+        font-weight: bold;
+        font-size: 38px !important;
+        /* text-shadow: 4px 4px 3px rgba(39, 39, 39, 0.637); */
+        /* left: 0px; */
+      
+      }
+
+      .experience p{
+        font-size: 12px;
+      }
+
+      .experience h3{
+        font-size: 22px;
+      }
+
+      .btn-ex{
+        background: linear-gradient( 180deg, rgb(203, 48, 48) 0%, rgb(154, 31, 31) 50%, rgb(124, 17, 17) 100%) !important;
+        border: none;
+        color: #ffffff;
+        border-radius: 25px !important;
+        transition: 2s;
+        font-size: 14px;
+        padding: 10px 0px;
+        margin: 15px 0px;
+        text-transform: uppercase;
+        
+      }
+  
+  
+      .btn-ex:hover{
+        background: #ffffff !important;
+        border: none!important;
+        color: rgb(0, 0, 0) !important;
+        border-radius: 25px !important;
+      }
+  
+
+      
+     .sky h1::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h1::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+    .sky h3::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 4px 10px;
+    }
+
+
+
+
 
         /* Header */
-        .hero {
+        /* .hero {
           height: 100vh;
           width: 100%;
           display: block;
@@ -2202,7 +2610,7 @@ a {
           background-repeat: no-repeat;
           background-attachment: fixed;
           
-        }
+        } */
 
       button .dropdown-item{
         font-size: 14px !important;
@@ -2238,9 +2646,9 @@ a {
         display: none;
       }
       
-      .hero{
+      .hero2{
         display: block;
-        background-image: url(../images/img-jets-views/ap-1.jpg);
+        background-image: url(../images/img-jets-views/ap-1.jpg) !important;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -2456,7 +2864,7 @@ a {
     padding: 5px 0;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
   }
 
