@@ -106,6 +106,14 @@ $(function() {
 
 });
 
+	// Carousel Examples ( Services Page)
+	$(document).ready(function(){
+		$('#carouselExampleControls-1, carouselExampleControls-2').carousel({
+			interval: 2000,
+			keyboard: false,
+			pause: hover
+		});
+	})
 
 	// Empty Legs
 
@@ -122,6 +130,9 @@ $(function() {
 		});
 
 
+		
+
+
 
 	// MORE ABOUT PJ KEV
 
@@ -132,7 +143,8 @@ $(function() {
 	});
 
 
-
+	// Intitialize Slick
+	
 	// Flight Types Hidden Forms 
 
 	$(document).ready(function() {
