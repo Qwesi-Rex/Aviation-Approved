@@ -108,6 +108,17 @@ a {
   
 }
 
+.hero_book {
+  height: 50vh;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
 .hero_2 {
   height: 70vh;
   width: 100%;
@@ -146,9 +157,9 @@ a {
 
 }
 
-#pusher{
-  position: relative;
-  /* margin-top: 180px; */
+#push-book{
+  margin-top: 180px;
+
 }
 
 
@@ -702,7 +713,11 @@ a {
         z-index: 999;
       }
 
-      
+      .welcome-ad-book{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.842)), url(../images/img-jets-views/ap-11.jpg);
+        background-position: center;
+        background-attachment: fixed;
+      }
 
       .welcome-ad p{
         font-size: 17px;

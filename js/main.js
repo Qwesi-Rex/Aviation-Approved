@@ -108,7 +108,7 @@ $(function() {
 
 	// Carousel Examples ( Services Page)
 	$(document).ready(function(){
-		$('#carouselExampleControls-1, carouselExampleControls-2').carousel({
+		$('#carouselExampleControls-1, carouselExampleControls-2, carouselExampleControls-3, carouselExampleControls-4, carouselExampleControls-5, carouselExampleControls-6, carouselExampleControls-7, carouselExampleControls-8, carouselExampleControls-9, carouselExampleControls-10, carouselExampleControls-11, carouselExampleControls-12, carouselExampleControls-13, carouselExampleControls-14, carouselExampleControls-15, carouselExampleControls-16, carouselExampleControls-17, carouselExampleControls-18 ').carousel({
 			interval: 2000,
 			keyboard: false,
 			pause: hover
